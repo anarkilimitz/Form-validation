@@ -1,0 +1,26 @@
+                    <form action="#" class="contacts__form" novalidate>
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text" minlength="2" maxlength="30"
+                                pattern="^[А-Яа-яЁёA-Za-z\s]+$">
+                            <label for="name">Ваше имя</label>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea required name="text" id="text" minlength="10" maxlength="600"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button type="submit" class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox" id="policy">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                        </div>
+                    </form>
